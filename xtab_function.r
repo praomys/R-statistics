@@ -1,5 +1,9 @@
-## as.xtab attempts to convert an imported contingency table list
-## to a proper contingency table.
+## Denne Reed, University of Texas at Austin, reedd@mail.utexas.edu
+## A Funciton to convert list to an xtabs table
+## Contingency tables that are read in from .cvs file using read.table or 
+## read.csv produce table objects by default. For categorical data analysis
+## one often wants to convert from a table to an xtabs.
+
 
 as.xtab<-function(x) {
 	if(!missing(x)) {
